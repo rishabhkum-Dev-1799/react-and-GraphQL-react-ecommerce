@@ -1,0 +1,16 @@
+.homeroot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.p-card {
+    width: 250px;
+    margin: 10px;
+    height: 100%;
+}
+
+.cimg {
+    max-height: 200px;
+    object-fit: cover;
+}

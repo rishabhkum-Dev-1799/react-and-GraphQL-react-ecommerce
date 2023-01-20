@@ -1,4 +1,4 @@
-import Cart from "./pages/cart";
+import CartPage from "./pages/cart";
 import Home from "./pages/home";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
@@ -9,5 +9,5 @@ export const routes = [
     { path: '/login', element: <Login /> },
     { path: '/Signup', element: <Signup /> },
     { path: '/product/:pid', element: <Products /> },
-    { path: '/cart', element: <Cart /> }
+    { path: '/cart', element: <CartPage /> }
 ]

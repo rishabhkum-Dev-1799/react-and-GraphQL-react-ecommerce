@@ -16,17 +16,15 @@ export default function Navbar() {
                         <span>BUY IT QUICK</span>
                     </Link>
                     <ul id="nav-mobile" className="right">
-
+                        <li>
+                            <Link to='/cart'>
+                                <i style={{ padding: "0 20px", cursor: "pointer" }} className="material-icons #004d40 teal darken-4">add_shopping_cart</i>
+                            </Link>
+                        </li>
                         {
                             jwt ?
-                                <>
-                                    <li>
-                                        <Link to='/cart'>
-                                            <i style={{ padding: "0 20px", cursor: "pointer" }} className="material-icons #004d40 teal darken-4">add_shopping_cart</i>
-                                        </Link>
-                                    </li>
-                                    <li> <i onClick={logoutHandler} style={{ padding: "0 20px", cursor: "pointer" }} className="material-icons red">logout</i></li>
-                                </>
+                                <li> <i onClick={logoutHandler} style={{ padding: "0 20px", cursor: "pointer" }} className="material-icons red">logout</i></li>
+
                                 :
                                 <>
                                     <li><Link to='/login'>Login</Link></li>

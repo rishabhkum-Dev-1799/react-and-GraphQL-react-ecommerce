@@ -31,9 +31,11 @@ export default function LoginForm() {
         })
     }
     const changeHandler = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
+        setFormData((prevformData) => {
+            return {
+                ...prevformData,
+                [e.target.name]: e.target.value
+            }
         })
     }
 

@@ -35,6 +35,10 @@
     "pin": {
       "type": "biginteger",
       "required": true
+    },
+    "user": {
+      "type": "string",
+      "required": true
     }
   }
 }

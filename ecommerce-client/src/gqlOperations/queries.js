@@ -42,3 +42,15 @@ query getProductById($productId:ID){
     }
   }
 `
+export const GET_ALLCATEGORIES = gql`
+query Categories {
+  categories {
+    data {
+      id
+       attributes {
+         name
+       }
+      } 
+    }
+  }
+`

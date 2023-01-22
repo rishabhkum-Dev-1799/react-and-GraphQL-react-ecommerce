@@ -21,3 +21,8 @@
     right: 20px;
     z-index: 100;
 }
+
+.showSuggestion {
+    overflow-y: auto;
+    max-height: fit-content;
+}

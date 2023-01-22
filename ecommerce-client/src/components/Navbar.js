@@ -15,6 +15,7 @@ export default function Navbar() {
                     <Link to='/' className="brand-logo-left">
                         <span>BUY IT QUICK</span>
                     </Link>
+
                     <ul id="nav-mobile" className="right">
                         <li>
                             <Link to='/cart'>

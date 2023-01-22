@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { GET_ALLCATEGORIES } from '../gqlOperations/queries'
 
 export default function Category() {
@@ -15,15 +16,15 @@ export default function Category() {
     if (error) {
         console.log(error.message);
     }
-    if (data) {
-        console.log(data);
-    }
+
     return (
         <>
             <div className='category  '>
                 {data.categories.data.map((d) => {
                     return (
-                        <h5 className='chip btn blue white-text '>{d.attributes.name}</h5>
+                        <Link to={`/category/${d.id}`}>
+                            <h5 className='chip btn blue white-text '>{d.attributes.name}</h5>
+                        </Link>
                     )
                 })}
             </div>

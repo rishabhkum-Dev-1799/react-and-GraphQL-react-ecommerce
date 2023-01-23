@@ -26,3 +26,7 @@
     overflow-y: auto;
     max-height: fit-content;
 }
+
+.footer-page {
+    background-color: #00897b;
+}
